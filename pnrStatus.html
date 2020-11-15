@@ -35,7 +35,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="onlineBooking.html">Online Booking</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link text-white" href="pnrStatus.html">Pnr Status</a>
                 </li>
                 <li class="nav-item">
@@ -55,18 +55,29 @@
     </nav>
 
 
-    <div id="pnrStatus" class="container-fluid d-inline-flex justify-content-center flex-column">
+    <div id="runningStatus" class="container-fluid  d-flex justify-content-center mt-3">
+
         <form action="">
-            <label for="pnr"> Get Status by PNR Number:</label><br>
+            <label for="statusByPnr"> Get Status by PNR Number:</label><br>
             <input type="text" id="pnr" name="pnr" placeholder="Enter PNR Number"><br><br>
-            <input type="submit" value="Search" class="submit btn-warning buttonRadius">
+
+            <input type="submit" value="Check Status" class="submit  btn-warning buttonRadius">
         </form>
-        <h3>OR</h3>
+
+
+    </div>
+    <br>
+    <h3 class="text-center">OR</h3>
+
+    <div id="runningStatus" class="container-fluid  d-flex justify-content-center mt-3">
+
         <form action="">
-            <label for="pnr"> Get Status by mobile Number:</label><br>
-            <input type="text" id="pnr" name="pnr" placeholder="Enter Mobile Number"><br><br>
-            <input type="submit" value="Search" class="submit btn-warning buttonRadius">
+            <label for="statusByMobile"> Get Status by Mobile Number:</label><br>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter Mobile Number"><br><br>
+
+            <input type="submit" value="Check Status" class="submit  btn-warning buttonRadius">
         </form>
+
     </div>
 
     <!-- Optional JavaScript -->

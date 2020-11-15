@@ -28,6 +28,19 @@ input {
     border: 1px solid #000000;
     border-radius: 78px;
     font-size: 1em;
+    border: 1px solid black;
+    outline: none;
+}
+
+input:hover {
+    width: 30vw;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 78px;
+    font-size: 1em;
+    border: 1px solid black;
+    outline: none;
+    transform: scale(1.1);
 }
 
 nav ul li a:hover {
