@@ -30,85 +30,59 @@
         <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav  ml-auto ">
                 <li class="nav-item active">
-                    <a class="nav-link text-white " href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white navbarStyle " href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="onlineBooking.html">Online Booking</a>
+                    <a class="nav-link text-white navbarStyle" href="onlineBooking.html">Online Booking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="pnrStatus.html">Pnr Status</a>
+                    <a class="nav-link text-white navbarStyle" href="pnrStatus.html">Pnr Status</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="runningStatus.html">Running Status</a>
+                    <a class="nav-link text-white navbarStyle" href="runningStatus.html">Running Status</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="contactUs.html">Contact us</a>
+                    <a class="nav-link text-white navbarStyle " href="contactUs.html">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <span> <a class="btn btn-warning buttonRadius mr-3" href="login.html" role="button">Login</a> </span>
+                    <a class="btn btn-warning buttonRadius mr-3 buttonStyle" href="login.html" role="button">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-warning buttonRadius" href="signup.html" role="button">Signup</a>
+                    <a class="btn btn-warning buttonRadius buttonStyle" href="signup.html" role="button">Signup</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <form class="needs-validation" novalidate>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationCustom01">First name</label>
-                <input type="text" class="" id="validationCustom01" value="Mark" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Last name</label>
-                <input type="text" class="" id="validationCustom02" value="Otto" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationCustom03">City</label>
-                <input type="text" class="" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                    Please provide a valid city.
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom04">State</label>
-                <select class="custom-select" id="validationCustom04" required>
-              <option selected disabled value="">Choose...</option>
-              <option>...</option>
-            </select>
-                <div class="invalid-feedback">
-                    Please select a valid state.
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
+    <!-- ######################### SignUp ############################ -->
+
+    <h3 class="text-center" style="color: #016180;">SIGN UP</h3>
+
+    <div id="login" class="container-fluid  d-flex justify-content-center mt-3">
+
+        <form action="">
+            <label for="Name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your Name"><br>
+
+            <label for="Email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email address"><br>
+
+            <label for="mobileNumber">Mobile Number:</label><br>
+            <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Enter Mobile Number"><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter password"><br>
+
+            <label for="confirmPassword">Confirm Password</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter confirm password"><br><br>
+
+            <input type="submit" value="SignUp" class="submit  btn-warning buttonRadius">
+            <br><br>
+            <p>Already have an Account?
+                <a href="login.html">Click here</a>
+            </p>
+        </form>
+
+    </div>
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
