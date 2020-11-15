@@ -1,0 +1,64 @@
+.carouselImg {
+    width: 100vw;
+    height: 70vh;
+}
+
+.darkBlue {
+    background-color: #016180;
+}
+
+.whiteText {
+    color: white;
+    font-size: 2rem;
+}
+
+.yellowText {
+    color: #FAD201;
+    font-size: 2rem;
+}
+
+.yellowIcon {
+    color: #FAD201;
+    font-size: 2rem;
+}
+
+input {
+    width: 30vw;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 78px;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FAD201;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+/* .box {
+    width: 90%;
+    padding: 30px;
+    background-color: rgb(161, 161, 161);
+} */
