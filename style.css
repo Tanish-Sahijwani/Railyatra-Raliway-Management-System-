@@ -22,7 +22,7 @@
     font-size: 2rem;
 }
 
-input {
+.input {
     width: 30vw;
     padding: 5px;
     border: 1px solid #000000;
@@ -32,7 +32,7 @@ input {
     outline: none;
 }
 
-input:hover {
+.input:hover {
     width: 30vw;
     padding: 5px;
     border: 1px solid #000000;
@@ -70,6 +70,8 @@ input:hover {
 }
 
 .buttonStyle:hover {
+    background-color: #016180;
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
@@ -91,4 +93,8 @@ input:hover {
         width: 100vw;
         height: 40vh;
     }
+}
+
+::placeholder {
+    padding-left: 10px;
 }

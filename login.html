@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="login.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Railyatra</title>
 </head>
@@ -61,36 +62,18 @@
         <form action="">
 
             <label for="login">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter Email address"><br><br>
+            <input class="input" type="email" id="email" name="email" placeholder="Enter Email address" required>
+            <br><br>
 
             <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+            <input class="input" type="password" id="password" name="password" placeholder="Enter password" required><br><br>
 
-            <input type="submit" value="Login" class="submit  btn-warning buttonRadius">
+            <input type="submit" value="Login" class="submit  btn-warning buttonRadius input">
         </form>
 
     </div>
 
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
+    <script src="login.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

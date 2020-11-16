@@ -60,22 +60,38 @@
     <div id="login" class="container-fluid  d-flex justify-content-center mt-3">
 
         <form action="">
-            <label for="Name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your Name"><br>
+            <label for="First_Name">First Name:</label><br>
+            <input class="input" type="text" id="First_Name" name="First_Name" placeholder="Enter your First Name" required><br>
+
+            <label for="Last_Name">Last Name:</label><br>
+            <input class="input" type="text" id="Last_Name" name="Last_Name" placeholder="Enter your Last Name" required><br>
+
 
             <label for="Email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your Email address"><br>
+            <input class="input" type="email" id="email" name="email" placeholder="Enter your Email address" required><br>
 
             <label for="mobileNumber">Mobile Number:</label><br>
-            <input type="number" id="mobileNumber" name="mobileNumber" placeholder="Enter Mobile Number"><br>
+            <input class="input" type="number" id="mobileNumber" name="mobileNumber" placeholder="Enter Mobile Number" required><br>
+
+            <label for="age">Age:</label><br>
+            <input class="input" type="number" id="age" name="age" placeholder="Enter your age" required><br>
+            <label for="gender">
+            Please select your gender:
+            </label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
 
             <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" placeholder="Enter password"><br>
+            <input class="input" type="password" id="password" name="password" placeholder="Enter password" required><br>
 
             <label for="confirmPassword">Confirm Password</label><br>
-            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter confirm password"><br><br>
+            <input class="input" type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter confirm password" required><br><br>
 
-            <input type="submit" value="SignUp" class="submit  btn-warning buttonRadius">
+            <input type="submit" value="SignUp" class="submit  btn-warning buttonRadius input">
             <br><br>
             <p>Already have an Account?
                 <a href="login.html">Click here</a>
