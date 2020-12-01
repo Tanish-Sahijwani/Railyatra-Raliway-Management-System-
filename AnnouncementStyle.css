@@ -1,0 +1,59 @@
+a {
+    color: #016180;
+}
+
+a:hover {
+    color: #016180;
+    font-size: 1.2em;
+}
+
+.breadcrumb {
+    margin-top: 80px;
+    padding: 0px;
+    height: 40px;
+    padding: 8px;
+    background-color: #FAD201;
+}
+
+.newBadge {
+    background-color: red;
+    animation-name: new;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes new {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: rgb(255, 208, 0);
+    }
+}
+
+input {
+    width: 35vw;
+    height: 40px;
+    border: 1px solid #016180;
+    border-radius: 10px;
+    outline: none;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    input {
+        margin-right: 20px;
+        width: 60vw;
+        height: 40px;
+        border: 1px solid #17a2b8;
+        border-radius: 10px;
+        outline: none;
+    }
+}
+
+ ::placeholder {
+    padding: 20px;
+}

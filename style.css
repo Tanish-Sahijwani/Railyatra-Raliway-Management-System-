@@ -22,6 +22,29 @@
     font-size: 2rem;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.typeEffect {
+    background-color: #fff;
+    text-align: center;
+    color: #016180;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.typeEffect a {
+    color: #016180;
+}
+
+marquee {
+    background-color: #fad001da;
+    margin-top: 80px;
+}
+
 .input {
     width: 30vw;
     padding: 5px;
@@ -80,7 +103,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    input {
+    .input {
         width: 90vw;
         padding: 5px;
         border: 1px solid #000000;
@@ -97,4 +120,12 @@
 
 ::placeholder {
     padding-left: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.errorInput {
+    border: 1px solid red;
 }

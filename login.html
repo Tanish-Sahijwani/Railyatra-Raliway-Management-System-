@@ -12,6 +12,8 @@
     <script src="login.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Railyatra</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -63,12 +65,16 @@
 
             <label for="login">Email:</label><br>
             <input class="input" type="email" id="email" name="email" placeholder="Enter Email address" required>
-            <br><br>
+            <span class="error"><br> Please enter your Email-id</span>
+            <span class="error" id="invalid_email"><br> Please enter your VALID Email-id</span>
+            <br>
 
             <label for="password">Password</label><br>
-            <input class="input" type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+            <input class="input" type="password" id="password" name="password" placeholder="Enter password" required>
+            <span class="error"><br>Please enter your password</span>
+            <br><br>
 
-            <input type="submit" value="Login" class="submit  btn-warning buttonRadius input">
+            <input id="submit" type="submit" value="Login" class="submit  btn-warning buttonRadius input">
         </form>
 
     </div>
