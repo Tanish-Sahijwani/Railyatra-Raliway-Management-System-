@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Railyatra</title>
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
@@ -54,52 +55,19 @@
         </div>
     </nav>
 
-    <!-- ########################Online Booking ############################## -->
-    <h3 class="text-center mt-5" style="color: #016180;">LOG IN </h3>
-    <div id="onlineBooking" class="container-fluid  d-flex justify-content-center mt-3">
-
-        <form action="">
-            <label for="From">From:</label><br>
-            <input class="input" type="text" id="From" name="From" placeholder="City name"><br><br>
-
-            <label for="To">To:</label><br>
-            <input class="input" type="text" id="To" name="To" placeholder="City name"><br><br>
-
-            <label for="date">Date:</label><br>
-            <input class="input" type="date" id="date" name="date"><br><br>
-
-            <input type="submit" value="Search" class="submit  btn-warning buttonRadius input">
-
-
-        </form>
+    <div class="p-3">
+        <h3 style="color: #016180;margin-top: 80px;">About Us</h3>
+        <p> Railyatra!!! You can book trains for any destination, class or train type with us.We will help you in booking tickets from the comfort of our homes or offices. While this is convenient for most people ,it has made things particularly easy for
+            people residing in remote location. You can save the time needed to travel to railway station and waiting in the queue for your turn. We also provide you with an excellent feature which will help you to check your pnr status with your phone
+            number rather than pnr number making tasks easier for you !!
+        </p>
     </div>
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
 
+    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
+<?php
+    require "partials/footer.php";
+    ?>
