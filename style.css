@@ -54,6 +54,7 @@ marquee {
     border: 1px solid black;
     outline: none;
 }
+
 .textarea {
     width: 30vw;
     padding: 5px;
@@ -82,7 +83,8 @@ marquee {
     display: inline-block;
     position: relative;
 }
-#Seat_Type{
+
+#Seat_Type {
     width: 30vw;
     padding: 5px;
     border: 1px solid #000000;
@@ -91,6 +93,7 @@ marquee {
     border: 1px solid black;
     outline: none;
 }
+
 .navbarStyle::after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;

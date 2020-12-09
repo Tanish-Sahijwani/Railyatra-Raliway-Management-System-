@@ -59,7 +59,7 @@
             b = Number(document.getElementById('no_of_tickets').value);
             d = document.getElementById('Seat_Type').value;
             if (d == "General") {
-                e = 1
+                e = 1;
             } else if (d == "Sleeper") {
                 e = 1.5;
             } else if (d == "AC2tier") {
@@ -104,7 +104,9 @@ require "partials/_nav.php";
     echo "<span>Departure Time :" . $depature_time . "</span><br>";
     echo "<span>Arrival Time :" . $arrival . "</span><br>";
     echo "</div>";
-
+    $Pnr = mt_rand(1000000000, 9999999999);
+    $coach = mt_rand(1, 5);
+    $seat_no = mt_rand(1, 100);
     ?>
     <button id="bookNow" class="submit  btn-warning buttonRadius input" style="margin-left: 10px;">Confirm</button>
 
@@ -119,6 +121,9 @@ require "partials/_nav.php";
             <input type="hidden" name="seat_available" value="<?= $seat_available ?>" />
             <input type="hidden" name="depature_time" value="<?= $depature_time ?>" />
             <input type="hidden" name="ticket_fare" id="ticket_fare" value="<?= $ticket_fare ?>" />
+            <input type="hidden" name="Pnr" value="<?= $Pnr ?>" />
+            <input type="hidden" name="coach" value="<?= $coach ?>" />
+            <input type="hidden" name="seat_no" value="<?= $seat_no ?>" />
 
             <div id="form">
                 <h4>Please fill this detials</h4>

@@ -16,45 +16,10 @@
 
 <body>
 
-    <!--######################## NAVBAR #######################################-->
-    <nav class="navbar navbar-expand-lg  darkBlue fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="logo.png" width="30" height="30" alt="" style="
-            margin-bottom: 14px">
-            <span class='whiteText my-3'>RAIL</span><span class="yellowText ">YATRA</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-              <i class="fas fa-bars yellowIcon" aria-hidden="true"></i>
-          </span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav  ml-auto ">
-                <li class="nav-item active">
-                    <a class="nav-link text-white navbarStyle " href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white navbarStyle" href="onlineBooking.html">Online Booking</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white navbarStyle" href="pnrStatus.html">Pnr Status</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white navbarStyle" href="runningStatus.html">Running Status</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white navbarStyle " href="contactUs.html">Contact us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-warning buttonRadius mr-3 buttonStyle" href="login.html" role="button">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-warning buttonRadius buttonStyle" href="signup.html" role="button">Signup</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+     <!--######################## NAVBAR #######################################-->
+     <?php
+    require "partials/_nav.php";
+    ?>
     <div class="p-3">
         <h3 style="color: #016180;margin-top: 80px;">About Us</h3>
         <p> Railyatra!!! You can book trains for any destination, class or train type with us.We will help you in booking tickets from the comfort of our homes or offices. While this is convenient for most people ,it has made things particularly easy for

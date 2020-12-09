@@ -46,7 +46,7 @@ span {
             $end =  $_POST['To'] ;
             $date=  $_POST['date'] ;
            
-        $sql = "SELECT * FROM Train WHERE s_stat = '$start' AND d_stat = '$end' ";
+        $sql = "SELECT * FROM Train WHERE s_stat = '$start' AND d_stat = '$end' AND t_date='$date'";
             
             $search = mysqli_query($conn,$sql)  ;
             if (!$search)

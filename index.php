@@ -104,19 +104,19 @@
                 <div class="carousel-item active">
                     <img src="bg6.jpg" class="d-block w-100  carouselImg" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <a class="btn btn-warning buttonRadius" href="onlineBooking.html" role="button">Book Ticket Online</a>
+                        <a class="btn btn-warning buttonRadius" href="onlineBookingFront.php" role="button">Book Ticket Online</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="bg5.jpg" class="d-block w-100 carouselImg" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <a class="btn btn-warning buttonRadius" href="runningStatus.html" role="button">Check Running Status </a>
+                        <a class="btn btn-warning buttonRadius" href="runningStatus.php" role="button">Check Running Status </a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="bg4.jpg" class="d-block w-100 carouselImg" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <a class="btn btn-warning buttonRadius" href="pnrStatus.html" role="button">Check PNR Status </a>
+                        <a class="btn btn-warning buttonRadius" href="pnrStatus.php" role="button">Check PNR Status </a>
                     </div>
                 </div>
             </div>
