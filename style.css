@@ -136,6 +136,15 @@ marquee {
         width: 100vw;
         height: 40vh;
     }
+    .textarea {
+        width: 90vw;
+        padding: 5px;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        font-size: 1em;
+        border: 1px solid black;
+        outline: none;
+    }
 }
 
 ::placeholder {

@@ -22,7 +22,7 @@ if(!$update) {
 else{
 	echo "<script>
 alert('Signedin Sucessfully');
-window.location.href = 'index.php' 
+window.location.href = 'loginFront.php' 
 </script>" ; 
 echo "Welcome";
 }

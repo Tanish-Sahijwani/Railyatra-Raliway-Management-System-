@@ -10,7 +10,7 @@ $email='tanish99sahijwani@gmail.com';
     //$mail->Host = 'smtp.mandrillapp.com';
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = '2018.tanish.sahijwani@ves.ac.in';  // SMTP username
-    $mail->Password = 'TanISH149';                           // SMTP password
+    $mail->Password = '******';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 

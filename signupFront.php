@@ -22,7 +22,7 @@
     ?>
         <!-- ######################### SignUp ############################ -->
 
-        <h3 class="text-center" style="color: #016180;">SIGN UP</h3>
+        <h3 class="text-center" style="color: #016180;margin-top: 82px;">SIGN UP</h3>
 
         <div id="login" class="container-fluid  d-flex justify-content-center mt-3">
 

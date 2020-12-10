@@ -60,6 +60,7 @@
             $coach = $_POST['coach'];
             $seat_no =$_POST['seat_no'];
             
+            
             $query = "INSERT INTO Pnr (fname, lname, P_no, S_stat, D_stat, Seat_Type, no_of_tickets, Pnr_no, Train_Name ,Train_No, Coach, arrivial_time, depature_time,seat_no) 
         VALUES ('{$first}','{$last}',{$ph},'{$start}','{$dest}','{$seattype}', {$no_of_tickets}, {$Pnr}, '{$trainName}', '{$trainNo}','{$coach}','{$arrival}','{$depature_time}' ,'{$seat_no}')";
             $update = mysqli_query($conn, $query);
@@ -78,6 +79,7 @@
                 echo "<b>Seat Number:</b>" . $seat_no . "<br>";
                 echo "<b>Departure Time :</b>" . $depature_time . "<br>";
                 echo "<b>Arrival Time :</b>" . $arrival . "<br>";
+                //echo "<b>Total amount:</b>" . $total . "<br>";
             }
             $new_seat_available = $seat_available - $no_of_tickets;
             $query1 = "UPDATE Train SET seat_available = '$new_seat_available' WHERE t_no = '$trainNo' ";
@@ -109,7 +111,7 @@
         //$mail->Host = 'smtp.mandrillapp.com';
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
         $mail->Username = '2018.tanish.sahijwani@ves.ac.in';  // SMTP username
-        $mail->Password = 'password';                           // SMTP password
+        $mail->Password = '*******';                           // SMTP password
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to
         

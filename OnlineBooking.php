@@ -54,6 +54,8 @@ span {
             $row = mysqli_fetch_assoc($search) ;
             
             //var_dump($row) ;
+            echo "<span>".$row["s_stat"]."</span><span>  to  </span><span>".$row["d_stat"]."</span>" ;
+            echo "<table class='table table-hover'><thead class='bg-warning'><tr><th>Train Number</th><th>Train Name</th><th>Start Station</th><th>Departure Details</th><th>Destination Station</th><th>Arrival Date & Time</th><th>Total Seats</th><th>Seat Available</th><th>Seat Type</th><th>Minimum Fare</th><th></th></tr></thead>";
             while  ($row)  
             {
                 echo "<form action='book.php' method='POST'>";
@@ -66,13 +68,14 @@ span {
                 echo "<input type='hidden' value='{$row['ticket_fare']}' name='ticket_fare' />";
                 echo "<input type='hidden' value='{$row['seat_available']}' name='seat_available' />";
                 echo "<input type='hidden' value='{$row['ticket_fare']}' name='ticket_fare' />";
-                echo "<span>".$row["s_stat"]."</span><span>  to  </span><span>".$row["d_stat"]."</span>" ;
-                echo "<table class='table table-hover'><thead class='bg-warning'><tr><th>Train Number</th><th>Train Name</th><th>Start Station</th><th>Departure Details</th><th>Destination Station</th><th>Arrival Date & Time</th><th>Total Seats</th><th>Seat Available</th><th>Seat Type</th><th>Minimum Fare</th><th></th></tr></thead>";
+               
+               
                 echo "<tr><td>" . $row["t_no"]. "</td><td>" . $row["t_name"]."</td><td>" . $row["s_stat"]. "</td><td>" . $row["departure"]. "</td><td>" . $row["d_stat"]. "</td><td>" . $row["arrival"]."</td><td>" . $row["total_seat"]. "</td><td>" . $row["seat_available"]. "</td><td>" . $row["seat_type"]. "</td><td>" . $row["ticket_fare"]."</td> <td>" ."<button type='submit' class='btn btn-warning'> Book Now</button>". "</td>  </tr>"; 
-                echo "</table>";
+              
                 echo "</form>";
                 $row = mysqli_fetch_assoc($search) ;
             }
+            echo "</table>";
             if (!$search)
             {
                 echo "<script>

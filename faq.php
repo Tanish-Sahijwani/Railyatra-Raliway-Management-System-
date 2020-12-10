@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="login.js"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="style.css">
+   
     <title>Railyatra</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="footer.css">
@@ -29,7 +30,8 @@
 
 
 
-                <h3>FAQs</h3>
+            <h3 class="text-center" style="color: #016180;margin-top: 82px;">FAQs</h3>
+
 
                 <div>
                     <input type="checkbox" id="question1" name="q" class="questions">

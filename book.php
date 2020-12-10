@@ -72,6 +72,7 @@
 
             // Set the value of the total
             document.getElementById('TOTAL').innerHTML = c;
+            //document.getElementById('total').value = c;
         }
     </script>
 </head>
